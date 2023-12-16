@@ -1,0 +1,92 @@
+.channel {
+  padding: 8rem 0;
+  &-main {
+    padding: 4rem 3.2rem;
+    background-color: #1e2342;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.06);
+  }
+  &-top {
+    margin-bottom: 4.3rem;
+  }
+  &-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-white;
+
+    span {
+      color: #ff5353;
+    }
+  }
+  &-details {
+    display: flex;
+    overflow: hidden;
+    gap: 8.2rem;
+  }
+  &-icon {
+    cursor: pointer;
+    --circle: 8rem;
+    width: var(--circle);
+    height: var(--circle);
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c5cd3;
+    .fa-plus {
+      color: rgba(255, 255, 255, 1);
+      font-size: 2.4rem;
+    }
+  }
+  &-story {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  &-avatar {
+    margin-bottom: 2.2rem;
+    position: relative;
+    &::before {
+      content: "";
+      --circle: 1.6rem;
+      width: var(--circle);
+      height: var(--circle);
+      border-radius: 100rem;
+      background-color: #7cc54f;
+      position: absolute;
+      top: 4%;
+      right: 13%;
+      z-index: 10;
+    }
+  }
+  &-right {
+    width: 88.1rem;
+    max-width: 100%;
+  }
+  &-img {
+    --circle: 8rem;
+    width: var(--circle);
+    height: var(--circle);
+    border: 2px solid #59a5ff;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-inner {
+      padding: 0.5rem;
+      transform: translateY(0.3rem);
+    }
+  }
+  &-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $color-white;
+  }
+  &-time {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+  }
+}

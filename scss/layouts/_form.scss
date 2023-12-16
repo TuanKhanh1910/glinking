@@ -1,0 +1,139 @@
+.contact {
+  // min-height: calc((806 / 1728) * 100vw);
+  position: relative;
+  padding: var(--pd-main) 0;
+  @include max(1200px) {
+    padding: 4rem 0;
+  }
+  //   overflow: hidden;
+  &-bg {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -3;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-main {
+    @include max(1600px) {
+      padding: 9.4rem 0;
+    }
+    @include max(998px) {
+      padding: 4rem 0;
+    }
+  }
+  &-title {
+    @include mainTitle;
+    margin-bottom: 6rem;
+    @include max(700px) {
+      font-size: 3.4rem;
+      margin-bottom: 3rem;
+    }
+    @include max(500px) {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &-details {
+    width: 67.2rem;
+    max-width: 100%;
+    .btn-subMit {
+      margin-top: 5rem;
+    }
+    @include max(1100px) {
+      width: 100%;
+    }
+  }
+  &-content {
+    align-items: center;
+  }
+  &-left,
+  &-right {
+    @include max(1100px) {
+      width: 100%;
+    }
+  }
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 100%;
+      height: 5.2rem;
+      outline-color: $color-button;
+      border: 1px solid transparent;
+      background-color: rgba(239, 239, 234, 0.5);
+      padding: 1.4rem 8.8rem 1.7rem 1.6rem;
+      //   color: #cecece;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-family: "Sarabun";
+      &::placeholder {
+        color: #cecece;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Sarabun";
+      }
+    }
+    &-textarea {
+      width: 100%;
+      height: 12rem;
+      //   padding: 1.5rem 0 8.4rem 1.6rem;
+      padding: 1.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      outline-color: $color-button;
+      border: 1px solid transparent;
+      background-color: rgba(239, 239, 234, 0.5);
+      font-family: "Sarabun";
+      resize: none;
+      &::placeholder {
+        color: #cecece;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Sarabun";
+      }
+    }
+  }
+  &-form {
+    &-title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #475569;
+      font-family: "Sarabun";
+      margin-bottom: 0.8rem;
+    }
+    @include max(700px) {
+      .col-4 {
+        width: 100%;
+      }
+    }
+  }
+  &-right {
+    &-inner {
+      @include min(1600px) {
+        width: calc(100% + ((100vw - 121rem) / 2 + 1.5rem) - 22rem);
+      }
+
+      @include max(998px) {
+        width: 70%;
+      }
+      @include max(700px) {
+        width: 100%;
+      }
+    }
+  }
+  &-img {
+    padding-top: calc((584 / 662) * 100%);
+    position: relative;
+    img {
+      @include Img;
+    }
+  }
+}

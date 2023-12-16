@@ -1,0 +1,117 @@
+.live {
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.8rem;
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+  }
+  &-details {
+    .col-4 {
+      @include max(900px) {
+        width: 50%;
+      }
+      @include max(650px) {
+        width: 100%;
+      }
+    }
+  }
+  &-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  &-subTitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    cursor: pointer;
+  }
+  &-img {
+    padding-top: calc((236 / 400) * 100%);
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem 1.5rem 0 0;
+
+    img {
+      @include Img;
+    }
+  }
+  &-top {
+    flex-shrink: 0;
+  }
+  &-wrapper {
+    background-color: #1e2342;
+    border-radius: 1.5rem;
+  }
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    flex: 1;
+  }
+  &-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-white;
+    line-height: 112.7%;
+    margin-bottom: 3rem;
+    .text {
+      color: #ffb800;
+    }
+    @include max(700px) {
+      font-size: 2.5rem;
+    }
+  }
+  &-nickname {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3.9rem;
+    margin-top: auto;
+    .nickname {
+      &-top {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+      &-name {
+        font-size: 1.68rem;
+        font-weight: 400;
+        color: $color-white;
+      }
+      &-game {
+        font-size: 1.68rem;
+        color: rgba(158, 158, 158, 0.5);
+        font-weight: 400;
+      }
+    }
+  }
+  &-dare {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .dare {
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0.8rem;
+        background-color: #e85b5b;
+        border-radius: 1.8rem;
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+        gap: 1.32rem;
+      }
+    }
+  }
+}

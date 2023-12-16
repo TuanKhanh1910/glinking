@@ -1,0 +1,161 @@
+.swiper-slide {
+  height: initial;
+  // overflow: hidden;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 3rem;
+  &.factory {
+    width: 100% !important;
+  }
+
+  &-bullet {
+    &.factory {
+      display: inline-block !important;
+    }
+    --circle: 1.6rem;
+    width: var(--circle);
+    height: var(--circle);
+    background-color: #d6d882;
+    opacity: 0.4;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 2rem !important;
+    }
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: var(--circle);
+    //     right: var(--circle);
+    //     bottom: var(--circle);
+    //     left: var(--circle);
+    //     border: 1px solid $color-pri;
+    //     border-radius: 100rem;
+    //     opacity: 0;
+    //     transition: 0.1s ease-in-out;
+    // }
+
+    &-active {
+      background-color: #d6d882;
+      opacity: 1;
+      // &::before {
+      //     opacity: 1;
+      // }
+    }
+  }
+
+  &.white {
+    .swiper-pagination-bullet {
+      background-color: white;
+
+      &::before {
+        border-color: white;
+      }
+    }
+  }
+}
+
+.swiper-control {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  &-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100rem;
+    background-color: white;
+    @include mid-flex;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    @include transitionRe;
+    z-index: 5;
+    overflow: hidden;
+    position: relative;
+
+    &.swiper-button-disabled {
+      background-color: #dddddd;
+      cursor: default;
+      box-shadow: none;
+    }
+
+    @include min($res-mobile-min) {
+      &:hover(:not(.swiper-button-disabled)) {
+        background-color: $color-pri;
+
+        i {
+          color: white;
+        }
+      }
+    }
+
+    @include affter($color-pri);
+
+    @include hover {
+      &::after {
+        left: 0;
+        width: 100%;
+      }
+
+      i {
+        color: white;
+      }
+    }
+
+    i {
+      color: $color-pri;
+      font-size: 1.6rem;
+      font-weight: 400;
+      @include transitionRe;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &.posi {
+    .swiper-control-btn {
+      @include posi-vertical;
+    }
+
+    &.minus {
+      .swiper-prev {
+        right: calc(100% + 4rem);
+      }
+
+      .swiper-next {
+        left: calc(100% + 4rem);
+      }
+    }
+
+    &.midle {
+      .swiper-prev {
+        left: -2rem;
+      }
+
+      .swiper-next {
+        right: -2rem;
+      }
+    }
+
+    &.plus {
+      .swiper-prev {
+        left: 1rem;
+      }
+
+      .swiper-next {
+        right: 1rem;
+      }
+    }
+  }
+}
+
+.swiper-pagination-progressbar {
+  background: transparent;
+  height: 0.1rem !important;
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: $color-second !important;
+}
