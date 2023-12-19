@@ -1,10 +1,13 @@
 .channel {
   padding: 8rem 0;
+
   &-main {
     padding: 4rem 3.2rem;
     background-color: #1e2342;
     border-radius: 1.5rem;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.06);
+    width: calc(100% + (100vw - 121rem) / 2 - 4rem);
+    padding-right: 5.8rem;
   }
   &-top {
     margin-bottom: 4.3rem;
@@ -62,7 +65,7 @@
     }
   }
   &-right {
-    width: 88.1rem;
+    width: 98rem;
     max-width: 100%;
   }
   &-img {

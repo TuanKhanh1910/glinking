@@ -104,7 +104,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       cursor: pointer;
+      &.online {
+      }
+      &.offline {
+        gap: 3.9rem;
+        .friend-active {
+          padding-right: 0.7rem;
+        }
+      }
     }
     &-active {
       .fa-circle {

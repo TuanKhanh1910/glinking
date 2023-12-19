@@ -10,6 +10,10 @@
     align-items: center;
     gap: 4.5rem;
   }
+  &-content {
+    width: calc(100% + (100vw - 121rem) / 2 + 1.5rem);
+    padding-right: 5.8rem;
+  }
   &-details {
     .col-4 {
       @include max(900px) {

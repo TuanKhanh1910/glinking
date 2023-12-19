@@ -4,10 +4,10 @@ export default function bannerSwiper() {
   if (banner) {
     let swiper = new Swiper(banner.querySelector(".mySwiper"), {
       // loop: true,
-      spaceBetween: 40,
+      spaceBetween: 23,
       navigation: {
-        nextEl: ".vismis-button-next",
-        prevEl: ".vismis-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
       //   freeMode: true,
       watchSlidesProgress: true,

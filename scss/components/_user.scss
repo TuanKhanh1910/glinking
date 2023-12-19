@@ -1,10 +1,15 @@
 .user {
-  overflow: hidden;
+  // overflow: hidden;
+  // position: fixed;
+  // width: 100%;
+  // z-index: 100;
   &-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
+    width: calc(100% + (100vw - 121rem) / 2 + 1.5rem);
+    padding-right: 4.6rem;
   }
   &-left {
     .user-wrapper {
@@ -123,6 +128,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    z-index: 50;
     .account {
       &-top {
         display: flex;

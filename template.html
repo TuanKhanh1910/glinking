@@ -88,7 +88,7 @@
           <h2 class="header-title">Following</h2>
           <div class="header-friend">
             <div class="friend-menu">
-              <div class="friend-item">
+              <div class="friend-item online">
                 <div class="friend-left">
                   <div class="friend-avatar">
                     <img src="./assets/images/avatar_1.png" alt="" />
@@ -106,7 +106,7 @@
                   </div>
                 </div>
               </div>
-              <div class="friend-item">
+              <div class="friend-item offline">
                 <div class="friend-left">
                   <div class="friend-avatar">
                     <img src="./assets/images/avatar_2.png" alt="" />
@@ -121,7 +121,7 @@
                   </div>
                 </div>
               </div>
-              <div class="friend-item">
+              <div class="friend-item online">
                 <div class="friend-left">
                   <div class="friend-avatar">
                     <img src="./assets/images/avatar_3.png" alt="" />
@@ -139,7 +139,7 @@
                   </div>
                 </div>
               </div>
-              <div class="friend-item">
+              <div class="friend-item offline">
                 <div class="friend-left">
                   <div class="friend-avatar">
                     <img src="./assets/images/avatar_4.png" alt="" />
@@ -507,6 +507,8 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -516,186 +518,188 @@
       <section class="sec-live">
         <div class="live">
           <div class="container">
-            <div class="live-main">
-              <div class="live-left">
-                <p class="live-text">Live Dares</p>
+            <div class="live-content">
+              <div class="live-main">
+                <div class="live-left">
+                  <p class="live-text">Live Dares</p>
+                </div>
+                <div class="live-right">
+                  <p class="live-subTitle">Popular</p>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
               </div>
-              <div class="live-right">
-                <p class="live-subTitle">Popular</p>
-                <i class="fa-solid fa-angle-down"></i>
-              </div>
-            </div>
-            <div class="live-details row">
-              <div class="live-item col col-4">
-                <div class="live-wrapper">
-                  <div class="live-top">
-                    <div class="live-img">
-                      <img src="./assets/images/live_1.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="live-bottom">
-                    <h2 class="live-title">
-                      Get <span class="text">20 kills</span> using only a sniper
-                      rifle
-                    </h2>
-                    <div class="live-nickname">
-                      <div class="nickname-img">
-                        <img src="./assets/images/avatar_1.png" alt="" />
+              <div class="live-details row">
+                <div class="live-item col col-4">
+                  <div class="live-wrapper">
+                    <div class="live-top">
+                      <div class="live-img">
+                        <img src="./assets/images/live_1.png" alt="" />
                       </div>
-                      <div class="nickname-user">
-                        <div class="nickname-top">
-                          <p class="nickname-name">Guy Hawkins</p>
-                          <div class="nickname-check">
+                    </div>
+                    <div class="live-bottom">
+                      <h2 class="live-title">
+                        Get <span class="text">20 kills</span> using only a
+                        sniper rifle
+                      </h2>
+                      <div class="live-nickname">
+                        <div class="nickname-img">
+                          <img src="./assets/images/avatar_1.png" alt="" />
+                        </div>
+                        <div class="nickname-user">
+                          <div class="nickname-top">
+                            <p class="nickname-name">Guy Hawkins</p>
+                            <div class="nickname-check">
+                              <img
+                                src="./js/library/themify-icons/SVG/tick_circle.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="nickname-game">
+                            <p class="game">Call of duty</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="live-dare">
+                        <div class="dare-left">
+                          <div class="dare-wrapper">
+                            <div class="dare-wifi">
+                              <img
+                                src="./js/library/themify-icons/SVG/wifi.svg"
+                                alt=""
+                              />
+                            </div>
+                            <p class="dare-text">Live Dare</p>
+                          </div>
+                        </div>
+                        <div class="dare-right">
+                          <div class="dare-icon">
                             <img
-                              src="./js/library/themify-icons/SVG/tick_circle.svg"
+                              src="./js/library/themify-icons/SVG/circle_green.svg"
                               alt=""
                             />
                           </div>
-                        </div>
-                        <div class="nickname-game">
-                          <p class="game">Call of duty</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="live-dare">
-                      <div class="dare-left">
-                        <div class="dare-wrapper">
-                          <div class="dare-wifi">
-                            <img
-                              src="./js/library/themify-icons/SVG/wifi.svg"
-                              alt=""
-                            />
+                          <div class="dare-view">
+                            <p class="text">4.2K watching</p>
                           </div>
-                          <p class="dare-text">Live Dare</p>
-                        </div>
-                      </div>
-                      <div class="dare-right">
-                        <div class="dare-icon">
-                          <img
-                            src="./js/library/themify-icons/SVG/circle_green.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="dare-view">
-                          <p class="text">4.2K watching</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="live-item col col-4">
-                <div class="live-wrapper">
-                  <div class="live-top">
-                    <div class="live-img">
-                      <img src="./assets/images/live_2.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="live-bottom">
-                    <h2 class="live-title">
-                      DJ
-                      <span class="text">The Ketchup song</span> but make it
-                      cool
-                    </h2>
-                    <div class="live-nickname">
-                      <div class="nickname-img">
-                        <img src="./assets/images/avatar_1.png" alt="" />
+                <div class="live-item col col-4">
+                  <div class="live-wrapper">
+                    <div class="live-top">
+                      <div class="live-img">
+                        <img src="./assets/images/live_2.png" alt="" />
                       </div>
-                      <div class="nickname-user">
-                        <div class="nickname-top">
-                          <p class="nickname-name">Guy Hawkins</p>
-                          <div class="nickname-check">
+                    </div>
+                    <div class="live-bottom">
+                      <h2 class="live-title">
+                        DJ
+                        <span class="text">The Ketchup song</span> but make it
+                        cool
+                      </h2>
+                      <div class="live-nickname">
+                        <div class="nickname-img">
+                          <img src="./assets/images/avatar_1.png" alt="" />
+                        </div>
+                        <div class="nickname-user">
+                          <div class="nickname-top">
+                            <p class="nickname-name">Guy Hawkins</p>
+                            <div class="nickname-check">
+                              <img
+                                src="./js/library/themify-icons/SVG/tick_circle.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="nickname-game">
+                            <p class="game">Call of duty</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="live-dare">
+                        <div class="dare-left">
+                          <div class="dare-wrapper">
+                            <div class="dare-wifi">
+                              <img
+                                src="./js/library/themify-icons/SVG/wifi.svg"
+                                alt=""
+                              />
+                            </div>
+                            <p class="dare-text">Live Dare</p>
+                          </div>
+                        </div>
+                        <div class="dare-right">
+                          <div class="dare-icon">
                             <img
-                              src="./js/library/themify-icons/SVG/tick_circle.svg"
+                              src="./js/library/themify-icons/SVG/circle_green.svg"
                               alt=""
                             />
                           </div>
-                        </div>
-                        <div class="nickname-game">
-                          <p class="game">Call of duty</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="live-dare">
-                      <div class="dare-left">
-                        <div class="dare-wrapper">
-                          <div class="dare-wifi">
-                            <img
-                              src="./js/library/themify-icons/SVG/wifi.svg"
-                              alt=""
-                            />
+                          <div class="dare-view">
+                            <p class="text">4.2K watching</p>
                           </div>
-                          <p class="dare-text">Live Dare</p>
-                        </div>
-                      </div>
-                      <div class="dare-right">
-                        <div class="dare-icon">
-                          <img
-                            src="./js/library/themify-icons/SVG/circle_green.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="dare-view">
-                          <p class="text">4.2K watching</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="live-item col col-4">
-                <div class="live-wrapper">
-                  <div class="live-top">
-                    <div class="live-img">
-                      <img src="./assets/images/live_3.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="live-bottom">
-                    <h2 class="live-title">
-                      Do a
-                      <span class="text">house tour</span> but don’t say the
-                      word “the”
-                    </h2>
-                    <div class="live-nickname">
-                      <div class="nickname-img">
-                        <img src="./assets/images/avatar_1.png" alt="" />
+                <div class="live-item col col-4">
+                  <div class="live-wrapper">
+                    <div class="live-top">
+                      <div class="live-img">
+                        <img src="./assets/images/live_3.png" alt="" />
                       </div>
-                      <div class="nickname-user">
-                        <div class="nickname-top">
-                          <p class="nickname-name">Guy Hawkins</p>
-                          <div class="nickname-check">
+                    </div>
+                    <div class="live-bottom">
+                      <h2 class="live-title">
+                        Do a
+                        <span class="text">house tour</span> but don’t say the
+                        word “the”
+                      </h2>
+                      <div class="live-nickname">
+                        <div class="nickname-img">
+                          <img src="./assets/images/avatar_1.png" alt="" />
+                        </div>
+                        <div class="nickname-user">
+                          <div class="nickname-top">
+                            <p class="nickname-name">Guy Hawkins</p>
+                            <div class="nickname-check">
+                              <img
+                                src="./js/library/themify-icons/SVG/tick_circle.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="nickname-game">
+                            <p class="game">Call of duty</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="live-dare">
+                        <div class="dare-left">
+                          <div class="dare-wrapper">
+                            <div class="dare-wifi">
+                              <img
+                                src="./js/library/themify-icons/SVG/wifi.svg"
+                                alt=""
+                              />
+                            </div>
+                            <p class="dare-text">Live Dare</p>
+                          </div>
+                        </div>
+                        <div class="dare-right">
+                          <div class="dare-icon">
                             <img
-                              src="./js/library/themify-icons/SVG/tick_circle.svg"
+                              src="./js/library/themify-icons/SVG/circle_green.svg"
                               alt=""
                             />
                           </div>
-                        </div>
-                        <div class="nickname-game">
-                          <p class="game">Call of duty</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="live-dare">
-                      <div class="dare-left">
-                        <div class="dare-wrapper">
-                          <div class="dare-wifi">
-                            <img
-                              src="./js/library/themify-icons/SVG/wifi.svg"
-                              alt=""
-                            />
+                          <div class="dare-view">
+                            <p class="text">4.2K watching</p>
                           </div>
-                          <p class="dare-text">Live Dare</p>
-                        </div>
-                      </div>
-                      <div class="dare-right">
-                        <div class="dare-icon">
-                          <img
-                            src="./js/library/themify-icons/SVG/circle_green.svg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="dare-view">
-                          <p class="text">4.2K watching</p>
                         </div>
                       </div>
                     </div>
