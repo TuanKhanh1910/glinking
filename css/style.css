@@ -941,7 +941,6 @@ img {
   padding-bottom: 5.8rem;
   position: relative;
   overflow: hidden;
-  z-index: -2;
 }
 .banner-slider {
   width: calc(100% + (100vw - 121rem) / 2 + 6rem);
@@ -1129,6 +1128,60 @@ img {
 }
 .banner .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.banner-button-next,
+.banner-button-prev {
+  background-color: #3788e8;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 5rem;
+  --w: 2.3rem;
+  width: var(--w);
+  height: var(--w);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: 10;
+}
+@media screen and (max-width: 1200px) {
+  .banner-button-next,
+  .banner-button-prev {
+    display: none;
+  }
+}
+.banner-button-next:hover,
+.banner-button-prev:hover {
+  background-color: #fff;
+  border: 1px solid #3788e8;
+}
+.banner-button-next:hover .fa-solid,
+.banner-button-prev:hover .fa-solid {
+  color: #3788e8;
+}
+.banner-button-next .fa-solid,
+.banner-button-prev .fa-solid {
+  color: #fff;
+}
+.banner-button-next::after,
+.banner-button-prev::after {
+  display: none;
+}
+
+.banner-button-next {
+  position: absolute;
+  right: 5%;
+  top: 37%;
+  bottom: 0;
+}
+
+.banner-button-prev {
+  position: absolute;
+  top: 37%;
+  left: 5%;
 }
 
 .live-main {

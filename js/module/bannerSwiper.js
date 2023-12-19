@@ -6,8 +6,8 @@ export default function bannerSwiper() {
       // loop: true,
       spaceBetween: 23,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".banner-button-next",
+        prevEl: ".banner-button-prev",
       },
       //   freeMode: true,
       watchSlidesProgress: true,
